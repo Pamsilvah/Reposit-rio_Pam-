@@ -1,0 +1,38 @@
+# calculadora_simples
+
+def calcular(num1, operador, num2):
+    if operador == "+":
+        return num1 + num2 
+    elif operador == "-":
+        return num1 - num2 
+    elif operador == "*":
+        return num1 * num2
+    elif operador == "/":
+        if num2 != 0:
+            return num1 / num2
+        else: 
+            return "erro: divisão por zero!"
+    else: 
+        return "operação inválida"
+
+while True: 
+    print("\n=== calculadora ===")    
+    try:
+        num1 = float(input("digite o primeiro número :"))
+        operador = input("digite a operação(+, -, *, /): ")
+        num2 = float(input("digite o segundo número :"))
+
+        resultado = calcular(num1, operador, num2)
+        print(f"resultado: {resultado}")
+    try:
+
+    except ValueError:
+        print("Erro: digite apenas números válidos!")
+
+    print(CHEGUEI AQUI) #quebra_de_linha
+        continuar = input("deseja continuar? (s/n): ").strip().lower()
+    
+        if continuar != "s" :
+            print("encerramento calculadora...") 
+            break
+
